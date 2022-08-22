@@ -63,7 +63,7 @@ namespace CleanQueryFromCustomerData
             }
         }
 
-        // this class holds configuration data
+        //configuration data
         public class ConfigData
         {
             public string idCheck;

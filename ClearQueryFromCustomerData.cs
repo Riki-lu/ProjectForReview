@@ -66,7 +66,7 @@ namespace DllProject
                     case SyntaxKind.NameAndTypeDeclaration:
                     case SyntaxKind.SerializeOperator:
                         if (customerDataWordsAndAlternateWords[n.GetFirstDescendant<NameDeclaration>().GetFirstToken().ValueText] == null)
-                            customerDataWordsAndAlternateWords.Add(n.GetFirstDescendant<NameDeclaration>().GetFirstToken().ValueText, "CustomerData" +  indexCustomerData++);
+                            customerDataWordsAndAlternateWords.Add(n.GetFirstDescendant<NameDeclaration>().GetFirstToken().ValueText, "CustomerData" + indexCustomerData++);
                         break;
                     case SyntaxKind.ProjectOperator:
                     case SyntaxKind.ProjectRenameOperator:
@@ -92,19 +92,17 @@ namespace DllProject
                         break;
                     case SyntaxKind.StringLiteralExpression:
                         if (customerDataWordsAndAlternateWords[n.ToString().Trim()] == null)
-                            customerDataWordsAndAlternateWords.Add(n.ToString().Trim(), "'CustomerData" + indexCustomerData++ +"'");
+                            customerDataWordsAndAlternateWords.Add(n.ToString().Trim(), "'CustomerData" + indexCustomerData++ + "'");
                         break;
                     case SyntaxKind.LongLiteralExpression:
+                        var customerDataInNum = false;
+                        for (int i = 0; i < lstRegaexNumbersContainCustomerData.Count && !customerDataInNum; i++)
                         {
-                            var customerDataInNum = false;
-                            for (int i = 0; i < lstRegaexNumbersContainCustomerData.Count && !customerDataInNum; i++)
-                            {
-                                var item = lstRegaexNumbersContainCustomerData[i];
-                                customerDataInNum = new System.Text.RegularExpressions.Regex(item).Match(n.GetFirstToken().ToString().Trim()).Success;
-                            }
-                            if (customerDataInNum)
-                                customerDataWordsAndAlternateWords.Add(n.GetFirstToken().ToString().Trim(), "CustomerData" + indexCustomerData++);
+                            var currentCheckRegex = lstRegaexNumbersContainCustomerData[i];
+                            customerDataInNum = new Regex(currentCheckRegex).Match(n.GetFirstToken().ToString().Trim()).Success;
                         }
+                        if (customerDataInNum)
+                            customerDataWordsAndAlternateWords.Add(n.GetFirstToken().ToString().Trim(), "CustomerData" + indexCustomerData++);
                         break;
                 }
             });
