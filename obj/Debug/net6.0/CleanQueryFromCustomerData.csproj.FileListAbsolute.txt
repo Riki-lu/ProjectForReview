@@ -1,0 +1,12 @@
+Z:\Microsoft\project\Project\DllProject\DllProject\bin\Debug\net6.0\CleanQueryFromCustomerData.deps.json
+Z:\Microsoft\project\Project\DllProject\DllProject\bin\Debug\net6.0\CleanQueryFromCustomerData.dll
+Z:\Microsoft\project\Project\DllProject\DllProject\bin\Debug\net6.0\ref\CleanQueryFromCustomerData.dll
+Z:\Microsoft\project\Project\DllProject\DllProject\bin\Debug\net6.0\CleanQueryFromCustomerData.pdb
+Z:\Microsoft\project\Project\DllProject\DllProject\obj\Debug\net6.0\CleanQueryFromCustomerData.csproj.AssemblyReference.cache
+Z:\Microsoft\project\Project\DllProject\DllProject\obj\Debug\net6.0\CleanQueryFromCustomerData.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Microsoft\project\Project\DllProject\DllProject\obj\Debug\net6.0\CleanQueryFromCustomerData.AssemblyInfoInputs.cache
+Z:\Microsoft\project\Project\DllProject\DllProject\obj\Debug\net6.0\CleanQueryFromCustomerData.AssemblyInfo.cs
+Z:\Microsoft\project\Project\DllProject\DllProject\obj\Debug\net6.0\CleanQueryFromCustomerData.csproj.CoreCompileInputs.cache
+Z:\Microsoft\project\Project\DllProject\DllProject\obj\Debug\net6.0\CleanQueryFromCustomerData.dll
+Z:\Microsoft\project\Project\DllProject\DllProject\obj\Debug\net6.0\ref\CleanQueryFromCustomerData.dll
+Z:\Microsoft\project\Project\DllProject\DllProject\obj\Debug\net6.0\CleanQueryFromCustomerData.pdb
